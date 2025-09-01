@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Text to Speech</h3>
+  <input id="text" type="text" placeholder="Enter text">
+  <button onclick="speak()">Speak</button>
+
+  <script>
+    function speak() {
+      let text = document.getElementById("text").value;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+  </script>
+</body>
+</html>
